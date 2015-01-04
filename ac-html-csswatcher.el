@@ -78,7 +78,7 @@ For example you can set --logfile, --pidfile, --debug, --outputdir."
   :group 'ac-html-csswatcher)
 
 ;;; log util
-(defvar ac-html-csswatcher-debug t)
+(defvar ac-html-csswatcher-debug nil)
 (defvar ac-html-csswatcher-log-buf-name "*ac-html-csswatcher debug*")
 (defun ac-html-csswatcher-log-buf ()
   (get-buffer-create ac-html-csswatcher-log-buf-name))
