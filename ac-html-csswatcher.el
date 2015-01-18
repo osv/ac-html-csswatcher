@@ -169,4 +169,4 @@ when `csswatcher' support them."
           less-mode-hook)))
 
 (provide 'ac-html-csswatcher)
-;;; ac-html-csswatcher ends here
+;;; ac-html-csswatcher.el ends here
