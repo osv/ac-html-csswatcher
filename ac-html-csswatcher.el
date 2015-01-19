@@ -1,4 +1,4 @@
-;;; ac-html-csswatcher.el --- css/less class,id completion with `ac-html'
+;;; ac-html-csswatcher.el --- css/less class/id completion with `ac-html'
 
 ;; Copyright (C) 2015 Olexandr Sydorchuck
 
@@ -27,17 +27,22 @@
 
 ;; Preinstall:
 ;;
-;; Install `csswatcher' from https://github.com/osv/csswatcher :
-;; (using cpanminus)
+;; Install `csswatcher':
+;;
+;;   sudo cpan i CSS::Watcher
+;;
+;; or from sources using cpanminus:
 ;;
 ;;   git clone https://github.com/osv/csswatcher && cd csswatcher
 ;;   curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 ;;   sudo cpanm -v -i .
 ;;
-;; Configuration:
+;; Configuration, Emacs:
 ;;
 ;;   (require 'ac-html-csswatcher)
 ;;   (ac-html-csswatcher-setup)
+;;
+;; Configuration, project:
 ;;
 ;; File ".csswatcher" may indicate root of your project and used for set ignored files:
 ;;
@@ -49,7 +54,7 @@
 ;;
 ;; Otherwise projectile way used for root directory.
 ;;
-;; So if you use `ac-html-bootstrap' and don't want parse your bootstrap.css 
+;; So if you use `ac-html-bootstrap' and don't want to parse your bootstrap.css 
 ;; create in your project file .csswatcher with line:
 ;;
 ;;   ignore: bootstrap
