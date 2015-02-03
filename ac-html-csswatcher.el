@@ -3,7 +3,7 @@
 ;; Copyright (C) 2015 Olexandr Sydorchuck
 
 ;; Author: Olexandr Sydorchuck  <olexandr.syd@gmail.com>
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Keywords: html, css, less, auto-complete
 ;; Package-Requires: ((ac-html "0.3"))
 ;; URL: https://github.com/osv/ac-html-csswatcher
@@ -31,12 +31,13 @@
 ;;
 ;;   sudo cpan i CSS::Watcher
 ;;
-;; or from sources using cpanminus:
+;; Note:
 ;;
-;;   git clone https://github.com/osv/csswatcher && cd csswatcher
-;;   curl -L https://cpanmin.us | perl - --sudo App::cpanminus
-;;   sudo cpanm -v -i .
+;; Please, keep CSS::Watcher up-to-date.
+;; Recommended version of csswatcher is 0.3.6. Update:
 ;;
+;;   sudo cpan i CSS::Watcher
+;; 
 ;; Configuration, Emacs:
 ;;
 ;;   (require 'ac-html-csswatcher)
@@ -107,10 +108,6 @@ Set `ac-html-csswatcher-source-dir' with returned by csswatcher value after \"AC
                   (csswatcher-output-bufffer (generate-new-buffer-name "*csswatcher-output*"))
                   (args (append ac-html-csswatcher-command-args (list buffer-file-name))))
       (AC-HTML-CSSWATCHER-LOG "=> Start process [%s]\n to buffer: %s" csswatcher-process-name csswatcher-output-bufffer)
-      ;; ;;kill old process if still running)
-      ;; (when (get-process csswatcher-process-name)
-      ;;   (message "deleting")
-      ;;   (delete-process csswatcher-process-name)
       (set-process-sentinel
        (apply 'start-process
               csswatcher-process-name
