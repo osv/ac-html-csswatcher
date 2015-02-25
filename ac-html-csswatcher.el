@@ -34,7 +34,7 @@
 ;; Note:
 ;;
 ;; Please, keep CSS::Watcher up-to-date.
-;; Recommended version of csswatcher is 0.3.6. Update:
+;; Recommended version of csswatcher is 0.4.0 (run `csswatcher -v'). Update:
 ;;
 ;;   sudo cpan i CSS::Watcher
 ;; 
