@@ -71,7 +71,7 @@
 ;;
 ;;; Code:
 
-(require 'ac-html)
+(require 'web-completion-data)
 
 (defvar ac-html-csswatcher-source-dir nil
   "This is variable bounded as alist in `web-completion-data-sources',
