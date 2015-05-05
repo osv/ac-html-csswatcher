@@ -25,7 +25,7 @@
 
 ;;; Commentary:
 
-;; This package work `ac-html' and `company-web'
+;; This package work `ac-html' and `company-web', please, install one of these.
 ;;
 ;; Preinstall:
 ;;
