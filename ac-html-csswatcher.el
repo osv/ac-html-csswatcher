@@ -71,6 +71,7 @@
 ;;
 ;;; Code:
 
+(require 'cl)
 (require 'web-completion-data)
 
 (defvar ac-html-csswatcher-source-dir nil
