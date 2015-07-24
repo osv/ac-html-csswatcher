@@ -3,7 +3,7 @@
 ;; Copyright (C) 2015 Olexandr Sydorchuck
 
 ;; Author: Olexandr Sydorchuck  <olexandr.syd@gmail.com>
-;; Version: 0.1.3
+;; Version: 0.1.4
 ;; Keywords: html, css, less, auto-complete
 ;; Package-Requires: ((web-completion-data "0.1"))
 ;; URL: https://github.com/osv/ac-html-csswatcher
