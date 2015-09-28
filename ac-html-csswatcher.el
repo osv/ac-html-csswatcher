@@ -3,7 +3,7 @@
 ;; Copyright (C) 2015 Olexandr Sydorchuck
 
 ;; Author: Olexandr Sydorchuck  <olexandr.syd@gmail.com>
-;; Version: 0.1.4
+;; Version: 0.1.5
 ;; Keywords: html, css, less, auto-complete
 ;; Package-Requires: ((web-completion-data "0.1"))
 ;; URL: https://github.com/osv/ac-html-csswatcher
@@ -79,7 +79,7 @@
  value is computed by csswatcher programm.")
 (make-variable-buffer-local 'ac-html-csswatcher-source-dir)
 
-(defcustom ac-html-csswatcher-command "/home/anon/work/css_watcher/csswatcher"
+(defcustom ac-html-csswatcher-command "csswatcher"
   "The \"csswatcher\" command to be run."
   :type 'string
   :group 'ac-html-csswatcher)
@@ -127,6 +127,7 @@ Set `ac-html-csswatcher-source-dir' with returned by csswatcher value after \"AC
            (AC-HTML-CSSWATCHER-LOG "=> Process finished [%s]" proc)
            (setq ac-html-csswatcher-source-dir
                  (with-current-buffer csswatcher-output-bufffer
+                   (AC-HTML-CSSWATCHER-LOG "-- Result was: \n%s\n-- End of result\n" (buffer-string))
                    (when (string-match "PROJECT: \\(.*\\)$" (buffer-string))
                      (let ((project-dir (match-string 1 (buffer-string))))
                        (message "[csswatcher] parsed %s" project-dir)
