@@ -71,7 +71,8 @@
 ;;
 ;;; Code:
 
-(require 'cl)
+(eval-when-compile
+  (require 'cl))
 (require 'web-completion-data)
 
 (defvar ac-html-csswatcher-source-dir nil
