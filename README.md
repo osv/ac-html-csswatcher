@@ -8,8 +8,9 @@ Add CSS/LESS CLASS/ID completion support for `ac-html` and `company-web`
 
 ## DESCRIPTION ##
 
-This package provide completion data for EMACS's `ac-html` and
-`company-web` modes by using external tool  - `csswatcher`.
+This package provide completion data for EMACS's `ac-html`
+(tested with v0.31, recent version may not work 2015-09-29)
+and `company-web` modes by using external tool  - `csswatcher`.
 To point your project root directory use projectile style (.git folder, etc) or use `.csswatcher`
 file if you want ignore some CSS/LESS files.
 
@@ -33,7 +34,9 @@ Add to emacs config file:
 
 Completion  will regenerated  by  csswatcher after  saving css/less files,
 opening html(jade,slim,haml) files, or manually by
-`ac-html-csswatcher-refresh` or `company-web-csswatcher-refresh` commands
+`ac-html-csswatcher-refresh` or `company-web-csswatcher-refresh` commands.
+
+To enable completion when editing html use `M-x ac-html-csswatcher+` or add it in your hook.
 
 ## FILE .csswatcher ##
 

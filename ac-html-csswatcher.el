@@ -3,7 +3,7 @@
 ;; Copyright (C) 2015 Olexandr Sydorchuck
 
 ;; Author: Olexandr Sydorchuck  <olexandr.syd@gmail.com>
-;; Version: 0.1.6
+;; Version: 0.1.7
 ;; Keywords: html, css, less, auto-complete
 ;; Package-Requires: ((web-completion-data "0.1"))
 ;; URL: https://github.com/osv/ac-html-csswatcher
@@ -47,6 +47,7 @@
 ;;   ;; or if you prefer company-style names:
 ;;   (company-web-csswatcher-setup)
 ;;
+;; To enable completion when editing html use M-x `ac-html-csswatcher+' (or `company-web-csswatcher+') or add it in your hook.
 ;;
 ;; Configuration, project:
 ;;
