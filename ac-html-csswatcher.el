@@ -27,6 +27,10 @@
 
 ;; This package work `ac-html' and `company-web', please, install one of these.
 ;;
+;; For `ac-html' users: Since  ac-html 0.4 is alpha  stage, and not stable  yet. This
+;; package works with ac-html 0.3 series, if you are using ac-html 0.4
+;; series, you may downgrade ac-html aka reinstall from melpa-stable.
+;;
 ;; Preinstall:
 ;;
 ;; Install `csswatcher':

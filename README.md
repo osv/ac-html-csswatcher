@@ -9,7 +9,7 @@ Add CSS/LESS CLASS/ID completion support for `ac-html` and `company-web`
 ## DESCRIPTION ##
 
 This package provide completion data for EMACS's `ac-html`
-(tested with v0.31, recent version may not work 2015-09-29)
+(tested with v0.31, recent version v0.4 may not work 2015-09-29)
 and `company-web` modes by using external tool  - `csswatcher`.
 To point your project root directory use projectile style (.git folder, etc) or use `.csswatcher`
 file if you want ignore some CSS/LESS files.
