@@ -40,7 +40,7 @@
 ;; Note:
 ;;
 ;; Please, keep CSS::Watcher up-to-date.
-;; Recommended version of csswatcher is 0.4.0 (run `csswatcher -v'). Update:
+;; Recommended version of csswatcher is 0.4.7 (run `csswatcher -v'). Update:
 ;;
 ;;   sudo cpan i CSS::Watcher
 ;; 
@@ -62,6 +62,8 @@
 ;;   ignore: \.css$
 ;;   # except app.css
 ;;   use: app\.css
+;;   # and skip recursive scanning node_modules, it may be slow!
+;;   skip: node_modules
 ;;
 ;; Otherwise projectile way used for root directory.
 ;;

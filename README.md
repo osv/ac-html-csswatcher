@@ -47,4 +47,6 @@ If you need exclude some css files create inside your project file `.csswatcher`
 ignore: \.css$
 # except app.css
 use: app\.css
+# and skip recursive scanning node_modules, it may be slow!
+skip: node_modules
 ```
